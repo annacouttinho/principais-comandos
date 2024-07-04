@@ -1,0 +1,61 @@
+Principais comandos Para se criar um site
+HTML (HyperText Markup Language)
+Os elementos de título são usados para definir cabeçalhos. <h1> é o mais importante e <h6> o menos importante.
+<h1>Este é um Título Principal</h1> <h2>Este é um Subtítulo</h2>
+
+2. <p>: Parágrafo
+O elemento <p> é usado para definir um parágrafo de texto.
+<p>Este é um parágrafo de texto.</p>
+
+3. <img>: Imagem
+O elemento <img> é usado para inserir imagens. Ele possui atributos como src (fonte da imagem) e alt (texto alternativo).
+<img src="caminho/da/imagem.jpg" alt="Descrição da imagem">
+
+CSS (Cascading Style Sheets)
+O CSS é usado para estilizar elementos HTML. Pode ser embutido dentro do HTML ou em um arquivo separado.
+Exemplo de CSS embutido:
+<!DOCTYPE html> <html> <head> <style> body { background-color: lightblue; } h1 { color: navy; text-align: center; }p { font-family: verdana; font-size: 20px; } </style> </head> <body> <h1>Este é um Título</h1> <p>Este é um parágrafo de texto estilizado.</p> </body> </html>
+
+Atributos id e class
+id
+O atributo id é usado para identificar um único elemento HTML de maneira única. Cada valor de id deve ser único em um documento.
+<p id="paragrafo1">Este é um parágrafo com um ID único.</p>
+
+E no CSS:
+#paragrafo1 { color: blue; }
+class
+O atributo class é usado para agrupar múltiplos elementos HTML que compartilham a mesma classe. Diferentes elementos podem ter a mesma classe.
+<p class="texto-destaque">Este é um parágrafo com uma classe.</p>
+<p class="texto-destaque">Este é outro parágrafo com a mesma classe.</p>
+
+E no CSS:
+.texto-destaque { font-weight: bold; color: red; }
+
+Estrutura básica de um documento HTML
+Aqui está um exemplo de um documento HTML completo com uso de <h1>, <p>, <img>, id e class.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Título da Página</title>
+<style>
+  .destaque {
+    color: red;
+    font-weight: bold;
+  }
+  #unico {
+    color: blue;
+  }
+</style>
+</head>
+<body>
+
+<h1>Meu Site</h1>
+<p id="unico">Este parágrafo tem um ID único.</p>
+<p class="destaque">Este parágrafo tem uma classe.</p>
+<p class="destaque">Este também tem a mesma classe.</p>
+<img src="imagem.jpg" alt="Descrição da imagem">
+
+</body>
+</html>
+
+Esses são os principais comandos e conceitos para começar a criar um site básico usando HTML e CSS.
